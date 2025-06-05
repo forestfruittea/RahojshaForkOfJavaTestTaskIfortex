@@ -20,7 +20,7 @@ public class UserController {
     @GetMapping("/most-active")
     public ResponseEntity<UserResponseDTO> getUserWithMostSessions() {
         return ResponseEntity.ok(userService.getUserWithMostSessions());
-    }
+        }
 
     @GetMapping("/with-mobile-sessions")
     public ResponseEntity<List<UserResponseDTO>> getUsersWithAtLeastOneMobileSession() {
